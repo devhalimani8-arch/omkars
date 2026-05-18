@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omkar Nadar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">ON</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon">🌙</span>
+    </button>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#achievements" onclick="closeMobile()">Achievements</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#gallery" onclick="closeMobile()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="hero-bg-accent"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in" style="--d:0.1s">Hello, I'm</p>
+        <h1 class="hero-name animate-in" style="--d:0.25s">Omkar<br><span>Nadar</span></h1>
+        <p class="hero-tagline animate-in" style="--d:0.4s">BBA Student · Marketing Enthusiast · Future Business Leader</p>
+        <div class="hero-badges animate-in" style="--d:0.55s">
+          <span class="badge">📊 Marketing</span>
+          <span class="badge">🏆 Leadership</span>
+          <span class="badge">🤝 Team Strategy</span>
+        </div>
+        <div class="hero-cta animate-in" style="--d:0.7s">
+          <a href="#contact" class="btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn-outline">View Projects</a>
+        </div>
+      </div>
+      <div class="hero-img animate-in" style="--d:0.3s">
+        <div class="img-wrapper">
+          <img src="assets/photo1.jpeg" alt="Omkar Nadar" />
+          <div class="img-ring"></div>
+          <div class="img-dot img-dot-1"></div>
+          <div class="img-dot img-dot-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-img-col reveal">
+          <img src="assets/photo1.jpeg" alt="Omkar Nadar" class="about-photo" />
+          <div class="about-stat-card">
+            <strong>FY BBA</strong>
+            <span>Marketing Specialization</span>
+          </div>
+        </div>
+        <div class="about-text-col reveal" style="--rd:0.15s">
+          <p class="about-bio">
+            I am <strong>Omkar Nadar</strong>, a First Year BBA student specializing in <strong>Marketing</strong> at MIT Vishwaprayag University. I am passionate about understanding consumer behavior, building brands, and leveraging technology to drive business growth.
+          </p>
+          <p class="about-bio">
+            With a strong foundation in <strong>leadership</strong> and <strong>strategic thinking</strong>, I bring real-world experience in team management and competitive decision-making. I thrive in high-pressure situations and believe in data-driven approaches to solving business problems.
+          </p>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-card-icon">🎓</div>
+              <h4>Education</h4>
+              <p>BBA – Marketing<br>MIT Vishwaprayag University</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">🎯</div>
+              <h4>Goals</h4>
+              <p>Build a career in brand strategy & digital marketing</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">⚡</div>
+              <h4>Strengths</h4>
+              <p>Leadership, Strategic Thinking, Team Management</p>
+            </div>
+            <div class="about-card">
+              <div class="about-card-icon">💡</div>
+              <h4>Interests</h4>
+              <p>Marketing, Business Strategy, Technology & Innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">Excellence</div>
+          <img src="assets/cert-best-player.jpeg" alt="Certificate of Excellence – Best Player" class="cert-img" onclick="openLightbox(this)" />
+          <div class="cert-info">
+            <h3>Certificate of Excellence – Best Player</h3>
+            <p>GLX United · Free Fire Esports</p>
+            <span class="cert-date">📅 10 Jan 2026</span>
+            <p class="cert-desc">Awarded for outstanding performance, exceptional skills, and consistent achievement. Recognized for dedication, talent, and a competitive spirit that drives excellence in team environments.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.15s">
+          <div class="cert-badge coursera-badge">Leadership</div>
+          <img src="assets/cert-igl.jpeg" alt="Certificate of Achievement – Best IGL" class="cert-img" onclick="openLightbox(this)" />
+          <div class="cert-info">
+            <h3>Certificate of Achievement – Best IGL</h3>
+            <p>GLX United · Free Fire Esports</p>
+            <span class="cert-date">📅 10 Jan 2026</span>
+            <p class="cert-desc">Awarded the Best In-Game Leader title for demonstrating exceptional leadership, strategic planning, and real-time decision-making — core competencies directly aligned with business management.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.3s">
+          <div class="cert-badge ai4a-badge">Strategy</div>
+          <img src="assets/cert-strategy.jpeg" alt="Esports & Gaming Strategy Certificate" class="cert-img" onclick="openLightbox(this)" />
+          <div class="cert-info">
+            <h3>Basics of Esports &amp; Gaming Strategy</h3>
+            <p>GLX United · Certificate of Completion</p>
+            <span class="cert-date">📅 10 Jan 2026</span>
+            <p class="cert-desc">Successfully completed a course on strategic planning, competitive analysis, and team coordination — skills that complement my BBA coursework in marketing and organizational behavior.</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--rd:0.45s">
+          <div class="cert-badge dt-badge">Design</div>
+          <div class="cert-img-placeholder">
+            <span>💡</span>
+          </div>
+          <div class="cert-info">
+            <h3>Design Thinking Project</h3>
+            <p>MIT Vishwaprayag University</p>
+            <span class="cert-date">📅 2025–2026</span>
+            <p class="cert-desc">Applied the design thinking methodology — empathize, define, ideate, prototype, and test — to develop an innovative solution addressing a real-world business problem as part of BBA coursework.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card featured-project reveal">
+          <div class="project-tag">Featured</div>
+          <div class="project-preview">
+            <div class="project-browser">
+              <div class="browser-bar">
+                <span></span><span></span><span></span>
+                <div class="browser-url">Team Leadership · GLX United</div>
+              </div>
+              <div class="project-screen">
+                <div class="watch-preview">
+                  <div class="watch-icon">🏆</div>
+                  <div class="watch-text">
+                    <h4>Competitive Team Leadership</h4>
+                    <p>Strategy · Decision Making</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Competitive Team Leadership – GLX United</h3>
+            <p>Led a competitive team as In-Game Leader, developing and executing strategies under pressure, coordinating team roles, and driving consistent performance — hands-on experience in leadership and team management directly aligned with BBA curriculum.</p>
+            <div class="project-tags">
+              <span>Leadership</span><span>Strategy</span><span>Team Management</span><span>Decision Making</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.15s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">📊</div>
+          </div>
+          <div class="project-info">
+            <h3>Marketing Strategy Case Study</h3>
+            <p>Analyzed consumer behavior trends and developed a comprehensive marketing strategy for a local business, applying core BBA marketing principles and digital tools to solve real-world business challenges.</p>
+            <div class="project-tags">
+              <span>Marketing</span><span>Strategy</span><span>Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.3s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">💡</div>
+          </div>
+          <div class="project-info">
+            <h3>Design Thinking Project</h3>
+            <p>Applied the 5-stage design thinking framework to identify a real-world problem in the college ecosystem and prototyped an innovative solution using empathy mapping and ideation techniques.</p>
+            <div class="project-tags">
+              <span>Design Thinking</span><span>Problem Solving</span><span>Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" style="--rd:0.45s">
+          <div class="project-preview mini-preview">
+            <div class="mini-icon">🤝</div>
+          </div>
+          <div class="project-info">
+            <h3>Esports & Gaming Strategy Course</h3>
+            <p>Completed a structured course on strategic planning and team coordination, reinforcing analytical thinking and competitive strategy skills that are directly applicable to marketing and business management roles.</p>
+            <div class="project-tags">
+              <span>Strategy</span><span>Analysis</span><span>Teamwork</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Moments</span>
+        <h2 class="section-title">Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" style="--rd:0s">
+          <img src="assets/photo1.jpeg" alt="Omkar Nadar" onclick="openLightbox(this)" />
+          <div class="gallery-caption">Profile Photo</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.1s">
+          <img src="assets/cert-best-player.jpeg" alt="Certificate of Excellence" onclick="openLightbox(this)" />
+          <div class="gallery-caption">GLX – Certificate of Excellence</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.2s">
+          <img src="assets/cert-igl.jpeg" alt="Best IGL Certificate" onclick="openLightbox(this)" />
+          <div class="gallery-caption">GLX – Best IGL Award</div>
+        </div>
+        <div class="gallery-item reveal" style="--rd:0.3s">
+          <img src="assets/cert-strategy.jpeg" alt="Esports Strategy Certificate" onclick="openLightbox(this)" />
+          <div class="gallery-caption">Esports & Gaming Strategy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+      <div class="contact-wrapper reveal">
+        <div class="contact-text">
+          <p>I'm always open to new opportunities, collaborations, and conversations. Whether you're a recruiter, fellow student, or just want to connect — feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:omkar@gmail.com" class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <span>omkar@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:9096222666" class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 90962 22666</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/omkarnadar" target="_blank" class="contact-item">
+              <span class="contact-icon">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/omkarnadar</span>
+              </div>
+            </a>
+            <a href="https://github.com/omkarnadar" target="_blank" class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/omkarnadar</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-area">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" class="form-input" id="cName" />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" class="form-input" id="cEmail" />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-input form-textarea" id="cMsg"></textarea>
+          </div>
+          <button class="btn-primary" onclick="sendMsg()">Send Message 🚀</button>
+          <p id="formMsg" class="form-success" style="display:none">✅ Thanks! I'll get back to you soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">Omkar Nadar</span>
+      <p>© 2026 · BBA Marketing · MITVPU</p>
+      <p class="footer-quote">"Lead with strategy. Win with discipline."</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Preview" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
